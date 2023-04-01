@@ -12,11 +12,16 @@ def GetArrayArithmeticProgress(a, b, c):
         array.append(element)
     return array
 
-a1 = int(input('Введите первый элемент массива:'))
-d = int(input('Введите разность:'))
-n = int(input('Введите колличество элементов массива:'))
-result = GetArrayArithmeticProgress(a1, d, n)
+while True:
+    try:
+        a1 = int(input('Введите первый элемент массива:'))
+        d = int(input('Введите разность:'))
+        n = int(input('Введите колличество элементов массива:'))
+        result = GetArrayArithmeticProgress(a1, d, n)
+        print(result)
+        break            
+    except:
+            print("Вы ввели не целое число!")
 
-print(result)
 
 
